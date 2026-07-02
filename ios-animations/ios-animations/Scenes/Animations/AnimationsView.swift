@@ -34,7 +34,7 @@ final class AnimationsView: UIView {
     }
 
     private func setupAnimateButton() {
-        animateButton.setTitle("Tap", for: .normal)
+        animateButton.setTitle("Animate", for: .normal)
         animateButton.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         animateButton.translatesAutoresizingMaskIntoConstraints = false
         animateButton.configuration = .filled()
