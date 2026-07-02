@@ -57,4 +57,4 @@ A interface foi separada em duas responsabilidades:
 
 ## Créditos
 
-Projeto baseado no Project 15, do curso 100 Days of Swift, criado por :contentReference[oaicite:0]{index=0} (:contentReference[oaicite:1]{index=1}).
+Projeto baseado no Project 15, do curso 100 Days of Swift, criado por Paul Hudson (Hacking with Swift).
