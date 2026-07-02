@@ -49,7 +49,7 @@ final class AnimationsViewController: UIViewController {
                 
             case 6:
                 self.contentView.imageView.alpha = 0.1
-                self.contentView.imageView.backgroundColor = .systemGreen
+                self.contentView.imageView.backgroundColor = .systemBackground
 
             case 7:
                 self.contentView.imageView.alpha = 1

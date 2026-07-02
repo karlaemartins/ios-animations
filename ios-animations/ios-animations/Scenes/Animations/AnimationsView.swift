@@ -34,10 +34,19 @@ final class AnimationsView: UIView {
     }
 
     private func setupAnimateButton() {
-        animateButton.setTitle("Animate", for: .normal)
-        animateButton.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
+        var configuration = UIButton.Configuration.filled()
+        configuration.title = "Animate"
+        configuration.baseBackgroundColor = UIColor(hex: "#FFCC00")
+        configuration.baseForegroundColor = .white
+        configuration.cornerStyle = .medium
+        configuration.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
+            var outgoing = incoming
+            outgoing.font = .systemFont(ofSize: 24, weight: .bold)
+            return outgoing
+        }
+
+        animateButton.configuration = configuration
         animateButton.translatesAutoresizingMaskIntoConstraints = false
-        animateButton.configuration = .filled()
     }
 
     private func setupConstraints() {
